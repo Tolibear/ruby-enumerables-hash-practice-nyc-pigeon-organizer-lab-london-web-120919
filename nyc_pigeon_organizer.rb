@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
   data[:color].each do |bird_color, name|
     name.each do |bird_name|
       current_bird.each do |bird|
-        if bird_name === bird
+        if bird === bird_name
           pigeon_list[bird][:color] << bird_color.to_s
         end
       end
