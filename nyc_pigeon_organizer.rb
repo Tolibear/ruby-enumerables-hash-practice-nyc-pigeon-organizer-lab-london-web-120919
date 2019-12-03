@@ -30,7 +30,17 @@ data[:gender].each do |bird_gender, name|
     end
   end
 end
-
+# where they live assignment
+# gender assignment
+data[:lives].each do |home, name|
+  name.each do |bird_name|
+    current_bird.each do |bird|
+      if bird === bird_name
+        pigeon_list[bird][:lives] << home.to_s
+      end
+    end
+  end
+end
   pigeon_list
 end
 # binding.pry
